@@ -39,6 +39,9 @@ def translation(language1,language2,text):
     return response
 app = Flask(__name__)
 
+@app.route("/",methods=['GET'])
+def homepage():
+    return 'hello there'
 
 @app.route("/process",methods=['POST'])  
 def process_data():

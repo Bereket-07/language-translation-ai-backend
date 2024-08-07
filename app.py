@@ -53,4 +53,4 @@ def process_data():
     response = translation(language1,language2,text)
     return {"result": response}
 if __name__ == '__main__':
-    app.run(host='0.0.0.0',port=5000)
+    app.run(host='0.0.0.0', port=Port)
